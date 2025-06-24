@@ -2,6 +2,30 @@
 div {
   font-family: Arial, sans-serif;
 }
+.home-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+/* Logout button in the top-right corner */
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
 
 /* Styles for the notes section */
 .notes-section {
