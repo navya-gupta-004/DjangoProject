@@ -21,9 +21,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-# CORS_ALLOWED_ORIGINS = [
-#     'https://calender-2-9rhj.onrender.com'
-# ]
+CORS_ALLOWED_ORIGINS = [
+    'https://djangoproject1-d8mw.onrender.com'
+]
 
 STORAGES = {
     "default":{
