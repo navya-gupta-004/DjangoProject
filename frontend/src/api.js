@@ -4,16 +4,16 @@ import { ACCESS_TOKEN } from "./constants";
 //const apiUrl = "/choreo-apis/djangoproject/backend/v1";
 // sample JavaScript code snippet
 
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
-});
-
 // const api = axios.create({
-//   baseURL:
-//     import.meta.env.MODE === "development"
-//       ? import.meta.env.VITE_API_URL
-//       : import.meta.env.VITE_API_URL_DEPLOY,
+//   baseURL: import.meta.env.VITE_API_URL,
 // });
+
+const api = axios.create({
+  baseURL:
+    import.meta.env.MODE === "development"
+      ? import.meta.env.VITE_API_URL
+      : import.meta.env.VITE_API_URL_DEPLOY,
+});
 
 api.interceptors.request.use(
   (config) => {
