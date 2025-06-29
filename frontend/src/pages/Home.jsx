@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 import api from "../api";
 import Note from "../components/Note";
 import "../styles/Home.css";
@@ -51,8 +51,8 @@ function Home() {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("token"); // 👈 remove auth token
-    navigate("/login"); // 👈 redirect to login
+    localStorage.clear();
+    navigate("/login");
   };
 
   return (
